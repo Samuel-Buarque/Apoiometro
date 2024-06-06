@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main - APOIÔMETRO</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/d133621942.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu-section">
+        <nav class="menu">
+            <ul>
+                <li><a style="color:#1670f8;" href="index.html#proposta">Proposta</a></li>
+                <li><a style="color:#1670f8;" href="index.html#instituicoes">Instituições</a></li>
+                <li><a style="color:#1670f8;" href="index.html#criadores">Criadores</a></li>
+                <li><a style="color:#1670f8;" href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <div class="logo">APOIÔMETRO</div>
+        <div class="nav-links">
+            <a style="text-decoration: underline;" href="cadastro.html" id="signup-link">Cadastre-se</a>
+            <a style="color: white;" href="login.html" id="login-button">Login</a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <button id="create-post-btn"><i class="fas fa-plus"></i></button>
+        <div id="create-post-form" style="display:none;">
+            <form id="post-form">
+                <label for="post-photo">Foto:</label>
+                <input type="file" id="post-photo" name="photo" accept="image/*" required>
+                
+                <label for="post-name">Nome do Local:</label>
+                <input type="text" id="post-name" name="name" required>
+                
+                <label for="post-accessibility">Acessibilidade:</label>
+                <input type="text" id="post-accessibility" name="accessibility" required>
+                
+                <label for="post-description">Descrição:</label>
+                <textarea id="post-description" name="description" required></textarea>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <div id="posts-container"></div>
+    </div>
+
+    <footer>
+        <div class="footer-ul">
+            <p>&copy; 2024 APOIÔMETRO. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.menu-section {
+    background-color: #05162e;
+    width: 200px;
+    height: 100vh; /* Altura total da viewport */
+    position: fixed; /* Fixa a posição para que o menu fique sempre visível */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Z-index alto para ficar acima do conteúdo */
+}
+
+.menu {
+    padding: 20px;
+    padding-top: 100px; /* Espaço adicional para baixar os itens do menu */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    padding-left: 50px;
+    background-color: #f5d753;
+    border-bottom: 1px solid #ddd;
+    position: fixed; /* Fixa a posição do header */
+    width: 100%; /* Largura total da página */
+    z-index: 1000; /* Garante que o header esteja acima do conteúdo */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra preta com deslocamento vertical de 3px */
+}
+
+.logo {
+    color: #1670f8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    margin-right: 4%;
+    display: flex;
+    gap: 15px;
+}
+
+#login-button {   
+    background-color: #1670f8;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7dd6b; /* Fundo amarelo */
+    width: 100%; /* Largura total */
+    padding-left: 200px; /* Considerando o espaço do menu */
+}
+
+.login-box {
+    background-color: #fff; /* Fundo branco */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 540px; /* Aumentando 35% do tamanho original (400px * 1.35) */
+    width: 100%;
+}
+
+.login-box h2 {
+    color: #333; /* Texto cinza */
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-box button {
+    background-color: #333; /* Botão cinza */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #555; /* Botão cinza mais escuro ao passar o mouse */
+}
+
+.footer-ul {
+    text-align: center;
+    color: #333;
+    padding: 10px;
+}

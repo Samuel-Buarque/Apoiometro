@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário - APOIÔMETRO</title>
+    <link rel="stylesheet" href="cadastro_usuario.css">
+</head>
+<body>
+    <div class="menu-section">
+        <nav class="menu">
+            <ul>
+                <li><a style="color:#1670f8;" href="index.html#proposta">Proposta</a></li>
+                <li><a style="color:#1670f8;" href="index.html#instituicoes">Instituições</a></li>
+                <li><a style="color:#1670f8;" href="index.html#criadores">Criadores</a></li>
+                <li><a style="color:#1670f8;" href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <div class="logo">APOIÔMETRO</div>
+        <div class="nav-links">
+            <a style="text-decoration: underline;" href="cadastro.html" id="signup-link">Cadastre-se</a>
+            <a style="color: white;" href="login.html" id="login-button">Login</a>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Cadastro de Usuário</h2>
+            <form action="dashboard_usuario.html" method="post">
+                <input type="text" placeholder="Nome" name="nome" required>
+                <input type="text" placeholder="Sobrenome" name="sobrenome" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Senha" name="senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-ul">
+            <p>&copy; 2024 APOIÔMETRO. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function redirectToLogin() {
+            // Redireciona para a página de login após o cadastro
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

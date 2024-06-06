@@ -1,0 +1,186 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.scrolling-partners {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; 
+}
+
+.partners-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.partners {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.partner {
+    flex: none;
+    width: 13%; 
+    margin-right: 90px; 
+}
+
+.fog {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+
+.fog.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.fog.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+.menu-section {
+    background-color: #05162e;
+    width: 200px;
+    height: 100vh;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.menu {
+    padding: 20px;
+    padding-top: 100px; 
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #f5d753;
+    border-bottom: 1px solid #ddd;
+    position: fixed; 
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+    color: #1670f8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    margin-right: 4%;
+    display: flex;
+    gap: 15px;
+}
+
+#signup-link {
+    font-size: 12px;
+    padding-top: 12px;
+}
+
+#login-button {   
+    background-color: #1670f8;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-content {
+    text-align: center;
+    margin-left: 220px; /* Considerando o espaço do menu */
+    padding-top: 100px; /* Espaço para não sobrepor o header fixo */
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: #fff; /* Cor de fundo para destacar o conteúdo */
+}
+
+.main-content section {
+    margin-bottom: 40px; /* Espaço entre as seções */
+}
+
+.main-content h2 {
+    color: #1670f8; /* Cor dos títulos das seções */
+    margin-bottom: 10px; /* Espaço abaixo dos títulos das seções */
+}
+
+.main-content p { 
+    text-align: left;
+}
+
+#proposta{
+    font-size: 24px;
+}
+
+.main-content hr {
+    margin-top: 20px; /* Espaço acima da linha */
+    margin-bottom: 20px; /* Espaço abaixo da linha */
+    border: none;
+    border-top: 1px solid #ddd; /* Estilo da linha */
+}
+
+footer {
+    background-color: #e9e8e8; /* Cor de fundo do footer */
+    padding: 20px;
+    position: fixed; /* Fixa o footer */
+    bottom: 0;
+    left: 0;
+    height: 140px;
+    width: 100%; /* Largura total */
+    z-index: 900; /* Z-index menor que o menu para ficar atrás */
+}
+
+.footer-ul {
+    color: rgb(0, 0, 0); 
+    padding-left: 203px;
+}
